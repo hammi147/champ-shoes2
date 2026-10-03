@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champ Shoes | Step Into Your Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                CHAMP<span>SHOES</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+                <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">♡</button>
+                <button class="cart-btn" id="cartBtn">
+                    Cart <span id="cartCount">0</span>
+                </button>
+                <button class="menu-btn" id="menuBtn">☰</button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="eyebrow">NEW COLLECTION 2026</p>
+
+                    <h1>
+                        STEP INTO
+                        <span>YOUR STYLE.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover modern footwear designed for comfort,
+                        confidence, and everyday performance.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#shop" class="btn btn-primary">Shop Collection</a>
+                        <a href="#about" class="btn btn-secondary">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85"
+                        alt="Red athletic shoe"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">SHOP BY STYLE</p>
+                    <h2>Find Your Pair</h2>
+                </div>
+
+              <div class="category-grid">
+
+    <button class="category-card" data-category="Running">
+
+        <img
+            src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=700&q=85"
+            alt="Running shoes"
+        >
+
+        <div class="category-overlay">
+            <span>01</span>
+            <h3>Running</h3>
+            <p>Built for movement</p>
+        </div>
+
+    </button>
+
+
+    <button class="category-card" data-category="Lifestyle">
+
+        <img
+            src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=85"
+            alt="Lifestyle shoes"
+        >
+
+        <div class="category-overlay">
+            <span>02</span>
+            <h3>Lifestyle</h3>
+            <p>Everyday comfort</p>
+        </div>
+
+    </button>
+
+
+    <button class="category-card" data-category="Training">
+
+        <img
+            src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=700&q=85"
+            alt="Training shoes"
+        >
+
+        <div class="category-overlay">
+            <span>03</span>
+            <h3>Training</h3>
+            <p>Made for performance</p>
+        </div>
+
+    </button>
+
+
+    <button class="category-card" data-category="Casual">
+
+        <img
+            src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=85"
+            alt="Casual shoes"
+        >
+
+        <div class="category-overlay">
+            <span>04</span>
+            <h3>Casual</h3>
+            <p>Simple. Clean. Easy.</p>
+        </div>
+
+    </button>
+
+</div>
+            </div>
+        </section>
+
+        <!-- Shop -->
+        <section class="shop" id="shop">
+            <div class="container">
+
+                <div class="section-heading shop-heading">
+                    <div>
+                        <p class="eyebrow">OUR COLLECTION</p>
+                        <h2>Popular Picks</h2>
+                    </div>
+
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="All">All</button>
+                        <button class="filter-btn" data-filter="Running">Running</button>
+                        <button class="filter-btn" data-filter="Lifestyle">Lifestyle</button>
+                        <button class="filter-btn" data-filter="Training">Training</button>
+                        <button class="filter-btn" data-filter="Casual">Casual</button>
+                    </div>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+
+                    <!-- Product 1 -->
+                    <article class="product-card" data-category="Running">
+                        <div class="product-image">
+                            <span class="badge">NEW</span>
+                            <button class="heart-btn">♡</button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+                                alt="Velocity Red Runner"
+                            >
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category">Running</p>
+                            <h3>Velocity Red Runner</h3>
+
+                            <div class="product-bottom">
+                                <strong>$89</strong>
+                                <button class="add-cart"
+                                    data-name="Velocity Red Runner"
+                                    data-price="89">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card" data-category="Lifestyle">
+                        <div class="product-image">
+                            <button class="heart-btn">♡</button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80"
+                                alt="Urban White Sneaker"
+                            >
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category">Lifestyle</p>
+                            <h3>Urban White Sneaker</h3>
+
+                            <div class="product-bottom">
+                                <strong>$79</strong>
+                                <button class="add-cart"
+                                    data-name="Urban White Sneaker"
+                                    data-price="79">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card" data-category="Training">
+                        <div class="product-image">
+                            <span class="badge">BESTSELLER</span>
+                            <button class="heart-btn">♡</button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=700&q=80"
+                                alt="Power Black Trainer"
+                            >
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category">Training</p>
+                            <h3>Power Black Trainer</h3>
+
+                            <div class="product-bottom">
+                                <strong>$99</strong>
+                                <button class="add-cart"
+                                    data-name="Power Black Trainer"
+                                    data-price="99">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card" data-category="Casual">
+                        <div class="product-image">
+                            <button class="heart-btn">♡</button>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
+                                alt="Classic Street Sneaker"
+                            >
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category">Casual</p>
+                            <h3>Classic Street Sneaker</h3>
+
+                            <div class="product-bottom">
+                                <strong>$69</strong>
+                                <button class="add-cart"
+                                    data-name="Classic Street Sneaker"
+                                    data-price="69">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Promo -->
+        <section class="promo">
+            <div class="container promo-content">
+                <div>
+                    <p class="eyebrow">CHAMP PERFORMANCE</p>
+                    <h2>Built to Move.<br>Designed to Stand Out.</h2>
+                </div>
+
+                <a href="#shop" class="btn btn-light">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1000&q=85"
+                        alt="Shoes collection"
+                    >
+                </div>
+
+                <div class="about-text">
+                    <p class="eyebrow">ABOUT CHAMP SHOES</p>
+
+                    <h2>Made for people who keep moving.</h2>
+
+                    <p>
+                        Champ Shoes combines modern design with everyday
+                        comfort to create footwear that fits your lifestyle.
+                    </p>
+
+                    <p>
+                        From morning runs to weekend plans, every pair is
+                        designed to keep you comfortable and confident.
+                    </p>
+
+                    <a href="#contact" class="text-link">Learn More →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container newsletter-content">
+                <div>
+                    <p class="eyebrow">STAY IN THE LOOP</p>
+                    <h2>Get new drops & offers.</h2>
+                </div>
+
+                <form id="newsletterForm">
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Your email address"
+                        required
+                    >
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-grid">
+
+            <div>
+                <a href="#" class="logo">
+                    CHAMP<span>SHOES</span>
+                </a>
+                <p>
+                    Modern footwear for modern lifestyles.
+                </p>
+            </div>
+
+            <div>
+                <h4>Shop</h4>
+                <a href="#shop">All Shoes</a>
+                <a href="#shop">Running</a>
+                <a href="#shop">Lifestyle</a>
+                <a href="#shop">Training</a>
+            </div>
+
+            <div>
+                <h4>Company</h4>
+                <a href="#about">About Us</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>hello@champshoes.demo</p>
+                <p>Karachi, Pakistan</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Champ Shoes. Demo project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Demo Checkout
+            </button>
+        </div>
+
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
